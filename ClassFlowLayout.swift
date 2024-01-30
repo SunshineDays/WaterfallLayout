@@ -32,3 +32,10 @@ class ClassFlowLayout: UICollectionViewFlowLayout {
         return attributes
     }
 }
+
+extension Array {
+    /// 安全的索引 越界返回nil
+    subscript(safe index: Int) -> Element? {
+        return index >= 0 && index < endIndex ? self[index] : nil
+    }
+}
