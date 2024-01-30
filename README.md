@@ -2,6 +2,8 @@ UICollectionView流水布局，通过cell高度排版，适配多个section的�
 
 使用纯Swift实现，可以直接下载并拖入项目中使用
 
+不用实现UICollectionViewFlowLayoutDelegate，直接实现WaterfallLayoutDelegate
+
 以下是简单的实现：
 
     private lazy var flowLayout: WaterfallLayout = {
