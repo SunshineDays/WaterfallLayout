@@ -1,3 +1,10 @@
+1、ClassFlowLayout:
+
+让CollectionView内容左对齐，使用固定item间距，不会因为内容充满不了一行而自动调整item间距
+
+
+2、WaterfallLayout：
+
 UICollectionView流水布局，通过cell高度排版，适配多个section的展示
 
 使用纯Swift实现，可以直接下载并拖入项目中使用
