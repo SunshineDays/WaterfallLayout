@@ -46,7 +46,7 @@ class WaterfallLayout: UICollectionViewFlowLayout {
             let height = itemHeights.last?.max() ?? 0
             let lastSpacing = delegate?.waterFlowLayout(self, minimumLineSpacingForSectionAt: section - 1) ?? 0
             // 预设高度数组
-            itemHeights.append(Array(repeating: height - lastSpacing + sectionInsets.top, count: columns))
+            itemHeights.append(Array(repeating: height - (section == 0 ? 0 : lastSpacing) + sectionInsets.top, count: columns))
                         
             // 获取 section 中 item 的数量
             let items = collectionView?.numberOfItems(inSection: section) ?? 0
